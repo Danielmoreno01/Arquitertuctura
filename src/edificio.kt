@@ -1,7 +1,7 @@
 import java.util.Scanner
 
 fun main() {
-    val scanner = Scanner(System.`in`)  //para tener la entrada de los codigos del usuario
+    var scanner = Scanner(System.`in`)  //para tener la entrada de los codigos del usuario
     var intentos = 0   //deja el contador en 0
     var Bienvenido = false  //hasta qeu se demuestre lo contrario //con el codigo o bloqueo
 
@@ -16,7 +16,7 @@ fun main() {
             }
             2 -> {
                 print("Ingrese nombre completo: ")
-                var nombre = scanner.next()
+                var nombre = scanner.next()  //leeer la palabra ingresada
                 print("Motivo de la visita: ")
                 var motivo = scanner.next()
                 println("Bienvenid@  Mr.$nombre, agradecemos la la visita para: $motivo")
